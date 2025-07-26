@@ -40,7 +40,7 @@ const Header = ({ setSearchResults, searchResults }) => {
   const debouncedDispatch = debounce(async (value) => {
     if (value) {
       try {
-        const response = await fetch(`http://localhost:5000/api/product/search?query=${value}`);
+        const response = await fetch(`https://pet-backend-ohfi.onrender.com/api/product/search?query=${value}`);
         const data = await response.json();
         setSearchResults(data.data);  // Pass search results to parent
       } catch (err) {

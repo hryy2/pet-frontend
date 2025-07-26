@@ -13,6 +13,10 @@ import { getCart } from '../../services/Cart/CartAction'
 import debounce from 'lodash.debounce'
 import Cookies from 'js-cookie'
 import { Link } from 'react-router-dom'
+
+import { baseUrl } from './baseUrl' 
+import { Config } from './AxiosConfig'
+
 import React from 'react';
 import SearchResults from '../../Components/SearchResults/SearchResults' // 按你文件实际路径
 
@@ -40,7 +44,8 @@ const Header = ({ setSearchResults, searchResults }) => {
   const debouncedDispatch = debounce(async (value) => {
     if (value) {
       try {
-        const response = await fetch(`https://pet-backend-ohfi.onrender.com/api/product/search?query=${value}`);
+        // const response = await fetch(`https://pet-backend-ohfi.onrender.com/api/product/search?query=${value}`);
+        const response = await axios.get(`${baseUrl}/product/search?query=${value}`, Config());
         const data = await response.json();
         setSearchResults(data.data);  // Pass search results to parent
       } catch (err) {

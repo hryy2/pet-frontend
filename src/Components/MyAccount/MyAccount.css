@@ -1,0 +1,24 @@
+/* src/components/UserProfile/MyAccount.css */
+
+.profile-card {
+  transition: all 0.3s ease-in-out;
+}
+
+.profile-card:hover {
+  box-shadow: 0 0 0 2px rgba(82, 171, 152, 0.4);
+}
+
+input[readonly] {
+  cursor: not-allowed;
+}
+
+input[type="radio"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+  .profile-info-grid {
+    grid-template-columns: 1fr !important;
+  }
+}

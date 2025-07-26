@@ -1,0 +1,50 @@
+/* 背景渐变支持（浅色 & 深色自动切换） */
+.loginPage {
+  background: linear-gradient(to bottom right, #f3f4f6, #e5e7eb);
+}
+
+.dark .loginPage {
+  background: linear-gradient(to bottom right, #1f2937, #111827);
+}
+
+/* 登录卡片动画效果 */
+.loginCard {
+  animation: fadeInUp 0.6s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* loader 居中 */
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* 错误信息样式 */
+.invalid {
+  color: #dc2626;
+  font-size: 0.875rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* 密码眼睛图标 hover */
+.eye {
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.eye:hover {
+  color: #3b82f6;
+}

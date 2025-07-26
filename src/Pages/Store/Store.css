@@ -1,0 +1,328 @@
+/* .store{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+} */
+.store {
+    display: flex;
+    flex-direction: column; /* 垂直排列，筛选在上，商品在下 */
+    min-height: 100vh;
+    background-color: var(--white); /* 设置背景颜色 */
+    padding: 20px;
+  }
+
+.filter{
+    z-index: 12;
+    background-color: var(--white);
+}
+.filterContainer{
+    width: 17.5vw;
+     background-color: white;
+     box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+     padding: 15px;
+     background-color: var(--white);
+     border-radius: 10px;
+     margin-top: 4px;
+     z-index: 13;
+     overflow-y: scroll;
+}  
+ 
+.filterHead{
+    font-size: 18px;
+    font-weight: 500;
+}   
+.filtersHead{
+    font-size: 14px;
+    font-weight: 500;
+}
+.sortForMdScreen{
+    justify-content: space-between;
+    background-color: var(--white);
+    padding: 10px 40px;
+    margin: 0px 5px;
+}
+.storeSortForMd{
+font-size: 16px;
+font-weight: 500;
+}
+.filterItem{
+    font-size: 14px;
+}
+.sortDropDown{
+    background-color: #F5F5F7;
+    font-size: 14px;
+    color:var(--Grey);
+    margin: 0px 30px;
+     
+}
+ 
+.basisOfFilter{
+    margin-top: 25px;
+}
+ .priceContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+    align-items: center;
+ }
+ .priceInput{
+    width: 70%;
+    outline: none;
+    background-color: var(--inputBg);
+    padding: 5px;
+ }
+ .priceBox{
+    display: flex;
+    align-items: center; 
+ }
+ .dropDownFilter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+ .colorWithName{
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+    margin-right: 5px;
+ }
+ .downArrow{
+    padding: 5px;
+    font-size: 28px;
+    border-radius: 14px;
+    cursor: pointer;
+ }
+ .downArrow:active{
+    background-color: var(--lightGrey);
+ }
+ .checkBoxFilter{
+ accent-color: var(--iconColor);
+ margin-right: 15px;
+ width: 14px;
+ height: 14px;
+ }
+  
+ .StoreProduct{
+    display:flex;
+    flex-direction: column;
+}
+.filterSortHeader{
+   flex-direction: row;
+    background-color: var(--white);
+    padding: 10px;
+    border-bottom: 1px solid var(--lightGrey);
+    margin: 0px 5px;
+}
+.filterHeader ,.sortHeader{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+     width: 50%;
+     justify-content: center;
+     align-items: center;
+     padding:0px 0px;
+}
+.sortHeader{
+     border-left: 1px solid var(--lightGrey);
+}
+.nextPage{
+    display: flex;
+    background-color: var(--white);
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.pageNumber,.pageNumberEnd {
+    background-color: var(--primary);
+    width: 30px;
+    height: 30px;
+    color: var(--white);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 5px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.activePage{
+    background-color: var(--secondary) !important;
+}
+.pageNumberEnd {
+    background-color: var(--lightGrey) !important; 
+}
+.pageNumber:hover{
+    background-color: var(--secondary);
+}
+.sortForMobile{
+    position: absolute;
+    left:50%;
+    width:43%;
+    margin:10% 0% 10px 10px;
+    background-color: var(--white);
+    z-index:10;
+    padding: 10px;
+    borderRadius:10px;
+}
+.sortSelectForMobileText{
+    font-size: 14px;
+     line-height: 29px;
+}
+.sortSelectForMobile:active{
+     color: var(--primary);
+     
+}
+.selectedOption{
+    color:var(--primary)
+}
+.notProductImgCont {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  justify-items: center;
+}
+.notProductImg {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.noProductText {
+  font-weight: 600;
+  color: black;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+
+  
+  .filterSection {
+    width: 100%;
+    padding: 20px;
+    background-color: var(--white); /* 筛选部分背景颜色 */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* 设置阴影 */
+    border-radius: 10px; /* 圆角 */
+    margin-bottom: 20px; /* 底部间距 */
+  }
+  
+  .productSectionStore {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* 商品间距 */
+  }
+  
+  .filterContainer {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* 使内容溢出时出现滚动条 */
+  }
+  
+  .filterHead {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .filtersHead {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .priceContainer,
+  .dropDownFilter {
+    margin-bottom: 20px;
+  }
+  
+  .colorWithName {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+  }
+  
+  .storeSortForMd,
+  .sortForMdScreen {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  .sortForMdScreen {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  
+  .productSectionStore .grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* 自动适应屏幕大小 */
+    gap: 20px;
+  }
+  
+  .productCard {
+    background-color: var(--white);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .productCard:hover {
+    transform: translateY(-5px); /* 鼠标悬浮时轻微上移 */
+  }
+  
+  .nextPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  .pageNumber {
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .loadMoreContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .loadMoreButton {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .loadMoreButton:hover {
+    background-color: var(--secondary);
+  }
+  
+  .loadMoreButton:disabled {
+    background-color: var(--lightGrey);
+    cursor: not-allowed;
+  }

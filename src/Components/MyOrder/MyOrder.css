@@ -1,0 +1,78 @@
+.myOrderBox {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.orderBox {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+.myOrderImage {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.orderProductDetail {
+  flex: 1;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.productInfo {
+  font-size: 16px;
+}
+
+.orderProductName {
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+}
+
+.orderProductDetails {
+  font-size: 14px;
+  color: #777;
+}
+
+.ratingAndPrice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.orderPrice {
+  font-size: 18px;
+  font-weight: bold;
+  color: #52ab98;
+}
+
+.orderStatus {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #52ab98;
+  color: #fff;
+  text-align: center;
+}
+
+.orderStatus.cancelled {
+  background-color: #f44336;
+}
+
+.noOrdersMessage {
+  text-align: center;
+  font-size: 18px;
+  color: #888;
+}

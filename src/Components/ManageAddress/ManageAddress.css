@@ -1,0 +1,108 @@
+.manage-address {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.addNewAddressButton {
+  text-align: center;
+  padding: 5px;
+  border: 1px solid var(--primary);
+  margin-top: 10px;
+  width: 95%;
+  align-self: center;
+  cursor: pointer;
+  color: var(--primary);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.addNewAddressButton:active {
+  color: var(--iconColor);
+  border: 1px solid var(--iconColor);
+}
+.addAddressBox {
+  background-color: rgb(227, 248, 243, 0.5);
+  width: 95%;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  
+}
+.twoInputSide {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.newAddressHead {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--primary);
+}
+.inputAddress {
+  outline: none;
+  padding: 10px;
+  border: 1px solid var(--primary);
+}
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 10px;
+}
+.textAreaAddress {
+  outline: none;
+  padding: 10px;
+  border: 1px solid var(--primary);
+  width: 100%;
+}
+.cancel {
+  color: var(--primary);
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 30px;
+  cursor: pointer;
+}
+.cancel:active{
+color: var(--iconColor);
+}
+.buttonsSaveCancel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+}
+.addresses{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-self: center;
+  width: 95%;
+  margin-top: 20px;
+}
+.addressBox{
+  border: 1px solid var(--lightGrey);
+  padding: 20px;
+}
+.addressName{
+  font-size: 14px;
+  
+}
+.addressDetail{
+  font-size: 14px;
+  margin-top: 10px;
+  font-weight: 300;
+}
+.dltIcon{
+  color: var(--iconColor);
+  padding: 5px;
+  font-size: 26px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.dltIcon:hover{
+  background-color: var(--lightGrey);
+}

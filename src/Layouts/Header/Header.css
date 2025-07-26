@@ -1,0 +1,179 @@
+.navBar {
+   /* background-color: #ffffff; */
+   background-color: #f8fe44; /* 温暖米色 */
+   /* padding: 16px; */
+   /* display: flex;
+   justify-content: space-between;
+   align-items: center;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+   position: relative;
+ }
+ 
+ /* .name{
+   font-weight: 600;
+  color: var(--primary);
+  font-family: 'roboto';
+} */
+.nav-link{
+ display: flex;
+ flex-direction: row;
+ align-items: flex-end;
+}
+.link{
+  font-size: 16px;
+  font-weight: 400;
+  /* color: var(--white); */
+}
+.hamlink{
+  font-size: 16px;
+  font-weight: 400;
+  color:var(--white)
+}
+.link:hover, .hamlink:hover{
+  color: #FF6008;
+   
+}
+.link:active, .hamlink:active{
+  color:var(--black);
+}
+.searchBox {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   margin-left: 50%;
+   position: relative;
+ }
+ 
+ .searchInput {
+   max-width: 600px;  /* 限制最大宽度 */
+   margin: 0 auto;  /* 使其居中 */
+ }
+
+
+.searchIcon{
+  background-color: var(--iconColor);
+  cursor: pointer;
+}
+
+
+.icon {
+   width: 45px;  /* 设置宽度 */
+   height: 45px; /* 设置高度 */
+   object-fit: contain; /* 保持图片比例 */
+   font-size: 24px;
+   transition: all 0.3s ease;
+   /* color: #333; */
+ }
+ 
+ .icon-text {
+   margin-left: 8px;
+   white-space: nowrap;
+   transform: translateX(100%);
+   opacity: 0;
+   transition: all 0.3s ease;
+   font-size: 16px;
+   color: #fffefe;
+ }
+
+ .header-icon-group:hover .icon {
+   transform: translateX(-10px);
+ }
+ 
+ .header-icon-group:hover .icon-text {
+   transform: translateX(0);
+   opacity: 1;
+ }
+ 
+ .cart-badge {
+   position: absolute;
+   top: -5px;
+   right: -5px;
+   background-color: #ff6008;
+   color: white;
+   font-size: 12px;
+   padding: 2px 6px;
+   border-radius: 50%;
+   line-height: 1;
+   z-index: 10;
+ }
+
+ .search-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   position: relative;
+ }
+ 
+ .search-container input {
+   max-width: 600px;  /* 限制最大宽度 */
+   margin: 0 auto;  /* 使其居中 */
+ }
+
+
+
+.navSecond{
+ z-index: 1000;
+}
+.headIcon{
+  color: var(--primary);
+}
+.headIcon:hover{
+ scale: 1.1;
+ color: var(--secondary);
+}
+
+.iconText{
+  font-weight: 500;
+  color: var(--black);
+  text-align: center;
+  font-size: 14px;
+}
+.active{
+ color:var(--iconColor) !important;
+}
+
+.profile{
+ font-size: 35px;
+ color: var(--primary);
+}
+.searchField{
+ position: absolute;
+ z-index: 5;
+ background-color: var(--white);
+}
+.searchValue{
+ padding: 5px 10px;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+}
+.searchValue:hover{
+background-color: var(--quaternary);
+}
+
+
+/* .header-icon-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 60px;  /* 统一最小宽度 */
+  margin-left: 10px;
+  margin-right: 10px;
+/* } */
+
+/* .icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.icon-text {
+  font-size: 16px;
+  margin-top: 4px;
+  color: white;
+} */ 
+
+ 

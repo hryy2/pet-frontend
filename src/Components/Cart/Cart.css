@@ -1,0 +1,46 @@
+/* AddToCart.css */
+
+/* 小屏幕图片轻微缩小动画 */
+@media (max-width: 768px) {
+  img {
+    transition: transform 0.3s ease;
+  }
+
+  img:hover {
+    transform: scale(1.02);
+  }
+}
+
+/* 优化按钮 hover 效果 */
+button {
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* 统一输入框边框和阴影样式 */
+input[type='text'] {
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type='text']:focus {
+  outline: none;
+  border-color: #4ade80; /* green-400 */
+  box-shadow: 0 0 0 2px rgba(74, 222, 128, 0.3);
+}
+
+/* 卡片 hover 提升层级 */
+.cart-item {
+  transition: box-shadow 0.3s ease;
+}
+
+.cart-item:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* 圆角颜色块边框适配暗色背景 */
+.color-swatch {
+  border: 1px solid #ccc;
+}

@@ -1,0 +1,79 @@
+.blogMainHead {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 2vh;
+}
+
+.homeContainer {
+  padding: 2vh 2vw;  /* 减小左右 padding */
+}
+
+.swiper {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.swiper-button {
+  cursor: pointer;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover,
+.swiper-button-prev:focus,
+.swiper-button-next:focus {
+  color: var(--primary);
+  cursor: pointer;
+}
+
+/* 轮播图底部小圆点样式 */
+.swiper-pagination {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+/* 将小圆点改为长方形 */
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 6px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 3px;
+  margin: 0 5px;
+  transition: background-color 0.3s;
+}
+
+/* 激活状态的长方形小圆点 */
+.swiper-pagination-bullet-active {
+  background-color: #fff;
+  width: 25px;
+}
+
+/* 分类按钮区域样式 */
+.category-button {
+  width: 300px; /* 增加按钮宽度 */
+  margin-left: 10px;  /* 给每个按钮左边加点距离 */
+  margin-right: 10px; /* 给每个按钮右边加点距离 */
+}
+
+/* 第一个按钮增加更大的左边距 */
+.category-button:first-child {
+  margin-left: 50px;  /* 增加左边距 */
+}
+
+/* 第四个按钮增加更大的右边距 */
+.category-button:last-child {
+  margin-right: 50px; /* 增加右边距 */
+}
+
+/* 使用 flex 使按钮有左右间距 */
+.category-buttons-container {
+  display: flex;
+  justify-content: space-between; /* 按钮之间均匀分布 */
+  gap: 10px;  /* 控制按钮之间的间距 */
+}
+

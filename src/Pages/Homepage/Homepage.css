@@ -54,24 +54,24 @@
 }
 
 /* 分类按钮区域样式 */
-.category-button {
-  width: 300px; /* 增加按钮宽度 */
-  margin-left: 10px;  /* 给每个按钮左边加点距离 */
-  margin-right: 10px; /* 给每个按钮右边加点距离 */
-}
+ .category-button {
+  width: 280px; /* 增加按钮宽度 */
+  /* margin-left: 10px;  给每个按钮左边加点距离 */
+  /* margin-right: 10px; 给每个按钮右边加点距离 */
+} 
 
 /* 第一个按钮增加更大的左边距 */
-.category-button:first-child {
-  margin-left: 50px;  /* 增加左边距 */
-}
+ .category-button:first-child {
+  margin-left: 45px;  /* 增加左边距 */
+} 
 
 /* 第四个按钮增加更大的右边距 */
-.category-button:last-child {
-  margin-right: 50px; /* 增加右边距 */
-}
+ .category-button:last-child {
+  margin-right: 45px; /* 增加右边距 */
+} 
 
 /* 使用 flex 使按钮有左右间距 */
-.category-buttons-container {
+ .category-buttons-container {
   display: flex;
   justify-content: space-between; /* 按钮之间均匀分布 */
   gap: 10px;  /* 控制按钮之间的间距 */

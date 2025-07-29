@@ -1,179 +1,210 @@
+/* 顶部主导航背景色，含logo条 */
 .navBar {
-   /* background-color: #ffffff; */
-   background-color: #f8fe44; /* 温暖米色 */
-   /* padding: 16px; */
-   /* display: flex;
-   justify-content: space-between;
-   align-items: center;
-   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
-   position: relative;
- }
- 
- /* .name{
-   font-weight: 600;
-  color: var(--primary);
-  font-family: 'roboto';
-} */
-.nav-link{
- display: flex;
- flex-direction: row;
- align-items: flex-end;
+  background-color: #002855; /* 深蓝背景 */
+  position: relative;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  z-index: 100;
 }
-.link{
-  font-size: 16px;
-  font-weight: 400;
-  /* color: var(--white); */
-}
-.hamlink{
-  font-size: 16px;
-  font-weight: 400;
-  color:var(--white)
-}
-.link:hover, .hamlink:hover{
-  color: #FF6008;
-   
-}
-.link:active, .hamlink:active{
-  color:var(--black);
-}
-.searchBox {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 100%;
-   margin-left: 50%;
-   position: relative;
- }
- 
- .searchInput {
-   max-width: 600px;  /* 限制最大宽度 */
-   margin: 0 auto;  /* 使其居中 */
- }
 
-
-.searchIcon{
-  background-color: var(--iconColor);
+/* logo 区域 */
+.box1 {
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
+.logo {
+  height: 80px;
+  width: auto;
+}
 
-.icon {
-   width: 45px;  /* 设置宽度 */
-   height: 45px; /* 设置高度 */
-   object-fit: contain; /* 保持图片比例 */
-   font-size: 24px;
-   transition: all 0.3s ease;
-   /* color: #333; */
- }
- 
- .icon-text {
-   margin-left: 8px;
-   white-space: nowrap;
-   transform: translateX(100%);
-   opacity: 0;
-   transition: all 0.3s ease;
-   font-size: 16px;
-   color: #fffefe;
- }
+.name b {
+  font-size: 36px !important; /* 调小点，更优雅 */
+  color: white;
+  font-family: 'Pacifico', cursive;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
 
- .header-icon-group:hover .icon {
-   transform: translateX(-10px);
- }
- 
- .header-icon-group:hover .icon-text {
-   transform: translateX(0);
-   opacity: 1;
- }
- 
- .cart-badge {
-   position: absolute;
-   top: -5px;
-   right: -5px;
-   background-color: #ff6008;
-   color: white;
-   font-size: 12px;
-   padding: 2px 6px;
-   border-radius: 50%;
-   line-height: 1;
-   z-index: 10;
- }
-
- .search-container {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 100%;
-   position: relative;
- }
- 
- .search-container input {
-   max-width: 600px;  /* 限制最大宽度 */
-   margin: 0 auto;  /* 使其居中 */
+/* 搜索框容器 */
+.searchBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-left: 40%;
+  position: relative;
+  max-width: 600px;
+  background-color: white;
+  border-radius: 9999px; /*完全圆角  */
+  padding: 5px 15px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.15);
+  transition: box-shadow 0.3s ease;
+  cursor: text; 
  }
 
 
-
-.navSecond{
- z-index: 1000;
-}
-.headIcon{
-  color: var(--primary);
-}
-.headIcon:hover{
- scale: 1.1;
- color: var(--secondary);
+.searchBox:hover, .searchBox:focus-within {
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.3);
 }
 
-.iconText{
-  font-weight: 500;
-  color: var(--black);
-  text-align: center;
-  font-size: 14px;
-}
-.active{
- color:var(--iconColor) !important;
-}
-
-.profile{
- font-size: 35px;
- color: var(--primary);
-}
-.searchField{
- position: absolute;
- z-index: 5;
- background-color: var(--white);
-}
-.searchValue{
- padding: 5px 10px;
- display: flex;
- flex-direction: row;
- align-items: center;
-}
-.searchValue:hover{
-background-color: var(--quaternary);
+/* 搜索框输入框 */
+.searchBox input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 8px 10px;
+  font-size: 16px;
+  border-radius: 9999px;
+  color: #222;
 }
 
+/* 搜索图标 */
+.searchIcon {
+  color: #004AAD;
+  cursor: pointer;
+  font-size: 24px;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+}
 
-/* .header-icon-group {
+/* 顶部右侧图标组 */
+.header-icon-group {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-width: 60px;  /* 统一最小宽度 */
-  margin-left: 10px;
-  margin-right: 10px;
-/* } */
+  min-width: 56px;
+  margin-left: 15px;
+  cursor: pointer;
+  position: relative;
+}
 
-/* .icon {
-  width: 50px;
-  height: 50px;
+.icon {
+  width: 28px;
+  height: 28px;
   object-fit: contain;
+  transition: transform 0.3s ease;
 }
 
 .icon-text {
-  font-size: 16px;
-  margin-top: 4px;
+  font-size: 13px;
   color: white;
-} */ 
+  margin-top: 4px;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  user-select: none;
+}
 
- 
+.header-icon-group:hover .icon {
+  transform: translateY(-6px);
+}
+
+.header-icon-group:hover .icon-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 购物车数量红点 */
+.cart-badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background-color: #FF6008;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 9999px;
+  font-weight: 700;
+  line-height: 1;
+  z-index: 10;
+}
+
+/* 搜索结果弹窗 */
+.searchField {
+  position: absolute;
+  top: 48px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  box-shadow: 0 8px 16px rgb(0 0 0 / 0.15);
+  border-radius: 12px;
+  width: 100%;
+  max-width: 600px;
+  max-height: 360px;
+  overflow-y: auto;
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+.searchValue {
+  padding: 8px 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  transition: background-color 0.2s ease;
+}
+
+.searchValue:hover {
+  background-color: #f0f0f0;
+}
+
+/* 导航链接样式 */
+.nav-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 10px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #004AAD;
+  color: #fff;
+}
+
+/* .nav-link.underline {
+  border-bottom: 2px solid #17f010;
+  color: #50df18;
+} */
+
+/* 移动端菜单 */
+.navSecond {
+  z-index: 1000;
+  background-color: #001f40;
+}
+
+.hamlink {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+}
+
+.hamlink:hover {
+  color: #FF6008;
+}
+
+@media (max-width: 768px) {
+  .searchBox {
+    max-width: 100%;
+    padding: 4px 12px;
+  }
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+  .icon-text {
+    font-size: 12px;
+  }
+}
